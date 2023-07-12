@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.section-padding {
+  padding: 4rem 6rem;
+}
+
+.section-margin {
+  margin: 4rem 6rem;
+}
+
+/* Navbar Section */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 6rem;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  height: 70px;
+}
+
+.navbar-logo {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 100px;
+  height: 70px;
+}
+
+.navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links p {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.navbar-links a {
+  padding-bottom: 20px;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar-links a:hover {
+  border-bottom: 3px solid red;
+}
+
+.navbar-links a.active {
+  border-bottom: 3px solid red;
+}
+
+.navbar-account {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-account p {
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#open-btn  {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.side-menu{
+    display: none;
+}
+
+/* Header Section */
+
+.header {
+  background-color: #e9eaec;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header-content h1 {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 65px;
+  letter-spacing: -0.04em;
+}
+
+.header-content p {
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 1.5rem;
+}
+
+.header-content button {
+  background-color: #f47c1c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  min-height: 40px;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Service Section */
+.service {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-title {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.service-title h1 {
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 65px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.service-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+
+.service-image {
+  height: 100px;
+}
+
+.service-pay,
+.service-track,
+.service-shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-content {
+  height: 100%;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.service-content h4 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service-content p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media screen and (max-width: 1050px) {
+
+  .navbar-links
+   {
+    display: none;
+  }
+
+  #open-btn {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+
+  .side-menu {
+    display: block;
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    padding-top: 4rem;
+  }
+
+  .side-menu p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  #close-btn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* Header Section */
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .section-padding{
+    padding: 4rem;
+}
+
+.section-margin{
+    margin: 4rem;
+  }
+
+  .header-content h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .service-title{
+    margin-bottom: 2rem;
+  }
+
+  .service-list{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-padding{
+      padding: 4rem 2rem;
+  }
+
+  .section-margin{
+      margin: 4rem 2rem;
+    }
+
+    header-content h1 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    .header-content p {
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 1rem;
+    }
+
+    .service-title h1 {
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 54px;
+    }
+
+
+
+  
+  
+}
