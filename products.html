@@ -1,84 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
-      <!-- Fifth Product -->
-      <div class="product hidden">
-        <div class="product-image">
-          <img src="./assets/nyptrashirt.jpg" alt="" class="service-image" />
-        </div>
-        <div class="product-content">
-          <h4>Black Shirt</h4>
-          <div class="rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
-          </div>
-          <p>Rs 1500</p>
-        </div>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="./index.html"><img src="./assets/IB.png" alt="logo" /></a>
       </div>
 
-      <!-- Sixth Product -->
-      <div class="product hidden">
-        <div class="product-image">
-          <img src="./assets/brand-shirt.jpg" alt="" class="service-image" />
-        </div>
-        <div class="product-content">
-          <h4>Cream Shirt</h4>
-          <div class="rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <!-- <i class="fa-solid fa-star"></i> -->
-            <i class="fa-solid fa-star-half-stroke"></i>
-          </div>
-          <p>Rs 1500</p>
-     
-        </div>
+      <!-- Links -->
+      <div class="navbar-links">
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="http://" class="active">Products</a></p>
+        <p><a href="http://">About</a></p>
+        <p><a href="http://">Contact</a></p>
       </div>
 
-      <div class="product hidden">
-        <div class="product-image">
-          <img src="./assets/BlueCottonPant.png" alt="" class="service-image" />
+      <!-- Account Section -->
+      <div class="navbar-account">
+        <p><i class="fa-solid fa-user"></i></p>
+        <p><i class="fa-solid fa-cart-shopping"></i></p>
+      </div>
+
+      <!-- For responsive Navbar -->
+
+      <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
+
+      <div class="side-menu">
+        <p><a href="http://" class="active">Home</a></p>
+        <p><a href="http://">Products</a></p>
+        <p><a href="http://">About</a></p>
+        <p><a href="http://">Contact</a></p>
+        <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="product-page">
+      <div class="product-category">
+        <h2>CATEGORY</h2>
+
+        <div class="product-category-list">
+        <h4>ALL</h4> 
+        <h4>SHIRTS</h4>
+        <h4>PANTS</h4>
+        <h4>SHOES</h4>
         </div>
-        <div class="product-content">
-          <h4>Blue Cotton Pant</h4>
-          <div class="rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
-          </div>          
-          <p>Rs 1300</p>
         
-        </div>
       </div>
 
-      <div class="product hidden">
-        <div class="product-image">
-          <img src="./assets/greyjoggers.jpg" alt="" class="service-image" />
-        </div>
-        <div class="product-content">
-          <h4>Grey Cotton Pant</h4>
-          <div class="rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
+      <div class="explore-category">
+        <!-- All of our products are made with high-quality materials and are designed to be comfortable and durable. Shop now and find the perfect product for you! -->
+        <h2>EXPLORE PRODUCTS</h2>
+        <span
+          >Stay stylish with the wide selection of products available at Impex
+          Clothing Store.</span
+        >
+
+        <div class="explore-products">
+          <!-- First Product -->
+          <div class="product-item">
+            <img src="./assets/f1.jpg" alt="" />
+
+            <div class="product-description">
+              <h3>SHIRTS</h3>
+              <h4>Blue Blazer</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 2500</p>
+            </div>
           </div>
-          <p>Rs 1300</p>
-          
+
+          <!-- Second Product -->
+          <div class="product-item">
+            <img src="./assets/pexels-ox-street-6050916.jpg" alt="" />
+
+            <div class="product-description">
+              <h3>SHIRTS</h3>
+              <h4>Blue Blazer</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 2500</p>
+            </div>
+          </div>
+
+          <!-- Third -->
+          <div class="product-item">
+            <img src="./assets/KhakiStretchable.jpg" alt="" />
+
+            <div class="product-description">
+              <h3>SHIRTS</h3>
+              <h4>Blue Blazer</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 2500</p>
+            </div>
+          </div>
+
+          <!-- Fourth -->
+          <div class="product-item">
+            <img src="./assets/BlueCottonPant.png" alt="" />
+
+            <div class="product-description">
+              <h3>SHIRTS</h3>
+              <h4>Blue Blazer</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 2500</p>
+            </div>
+          </div>
+
+          <!-- Fifth -->
+          <div class="product-item">
+            <img src="./assets/f1.jpg" alt="" />
+            <div class="product-description">
+              <h3>SHIRTS</h3>
+              <h4>Blue Blazer</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 2500</p>
+            </div>
+          </div>
+
+          <!-- Sixth -->
+          <div class="product-item">
+            <img src="./assets/pexels-shyam-mishra-13691727.jpg" alt="" />
+
+            <div class="product-description">
+              <h3>SHIRTS</h3>
+              <h4>Blue Blazer</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 2500</p>
+            </div>
+          </div>
+
+
         </div>
       </div>
+    </div>
 
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

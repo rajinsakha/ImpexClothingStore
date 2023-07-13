@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Impex Clothing Store</title>
-    <link rel="stylesheet" href="styleHome.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,16 +14,17 @@
     />
   </head>
   <body>
+    <!-- Navbar Section -->
     <div class="navbar">
       <!-- Logo -->
       <div class="navbar-logo">
-        <img src="./assets/IB.png" alt="logo" />
+        <a href="./index.html"><img src="./assets/IB.png" alt="logo" /></a>
       </div>
 
       <!-- Links -->
       <div class="navbar-links">
         <p><a href="http://" class="active">Home</a></p>
-        <p><a href="http://">Products</a></p>
+        <p><a href="./products.html">Products</a></p>
         <p><a href="http://">About</a></p>
         <p><a href="http://">Contact</a></p>
       </div>
@@ -39,8 +40,8 @@
       <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
 
       <div class="side-menu">
-        <p><a href="http://" class="active">Home</a></p>
-        <p><a href="http://">Products</a></p>
+        <p><a href="./index.html" class="active">Home</a></p>
+        <p><a href="./products.html">Products</a></p>
         <p><a href="http://">About</a></p>
         <p><a href="http://">Contact</a></p>
         <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
@@ -78,6 +79,7 @@
             <img src="./assets/Blazer.jpg" alt="" class="service-image" />
           </div>
           <div class="product-content">
+            <h3>BLAZERS</h3>
             <h4>Blue Blazer</h4>
             <!-- Rating Star Icons -->
             <div class="rating">
@@ -97,6 +99,7 @@
             <img src="./assets/brand-shirt.jpg" alt="" class="service-image" />
           </div>
           <div class="product-content">
+            <h3>SHIRTS</h3>
             <h4>Cream Shirt</h4>
             <div class="rating">
               <i class="fa-solid fa-star"></i>
@@ -113,18 +116,19 @@
         <div class="product">
           <div class="product-image">
             <img
-              src="./assets/BlueHalfShirt.jpg"
+              src="./assets/f6.jpg"
               alt=""
               class="service-image"
             />
           </div>
           <div class="product-content">
-            <h4>Sky Blue Half Shirt</h4>
+            <h3>SHIRTS</h3>
+            <h4>Colorful Shirt</h4>
             <div class="rating">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
+              <i class="fa-solid fa-star" ></i>
               <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
             </div>
             <p>Rs 1200</p>
@@ -141,6 +145,7 @@
             />
           </div>
           <div class="product-content">
+            <h3>PANTS</h3>
             <h4>Khaki Pant</h4>
             <div class="rating">
               <i class="fa-solid fa-star"></i>
@@ -196,15 +201,14 @@
     <div class="footer section-padding">
       <div class='footer-links'>
         <div class="footer-links_logo">
-          <img src="./assets/IB.png" alt="logo" />
+          <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
           <p>Kathmandu, Nepal, All Rights Reserved </p>
         </div>
         <div class="footer-links_div">
-          <h4>SHOP</h4>
-          <p><a href="http://">T-shirts</a></p>
-          <p><a href="http://">Pants</a></p>
-          <p><a href="http://">Jackets</a></p>
-          <p><a href="http://">Shoes</a></p>
+          <h4> <a href="./products.html">SHOP</a></h4>
+          <p><a href="./shirts.html">Shirts</a></p>
+          <p><a href="./pants.html">Pants</a></p>
+          <p><a href="./shoes.html">Shoes</a></p>
         </div>
 
         <div class="footer-links_div">
@@ -224,7 +228,7 @@
         </div>
 
         <div class="footer-payment_info">
-          <h4>This is Payment Section</h4>
+          <img src="./assets/pay.png" alt="payment">
         </div>
       
       </div>
