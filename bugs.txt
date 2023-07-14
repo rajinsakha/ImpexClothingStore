@@ -1,0 +1,1 @@
+Fix cart and account logo placement in Navbar in small and medium screen
