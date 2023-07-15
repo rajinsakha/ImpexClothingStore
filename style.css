@@ -606,7 +606,128 @@ a {
   font-weight: 400;
 }
 
+/* Recommended Products */
+.recommended-products{
+  padding: 2rem 6rem;
+  background-color: #e9eaec;
+}
 
+.recommended-products-title h1{
+  margin-bottom: 1rem;
+}
+
+.products-wrapper{
+  /* max-width: 1100px; */
+  width: 100%;
+  position: relative;
+}
+
+.products-wrapper .change{
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.products-wrapper i:first-child{
+  left: -22px;
+}
+
+.products-wrapper i:last-child{
+  right: -22px;
+}
+
+.product-slider{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.product-slider::-webkit-scrollbar{
+  display: none;
+}
+
+.product-slider .product-card{
+  scroll-snap-align: start;
+  /* height: 342px; */
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: 0.2s ease;
+}
+
+.productSlider.no-transition{
+  scroll-behavior: auto;
+}
+
+.product-slider.dragging{
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.product-slider.dragging .product-card{
+  cursor: grab;
+  user-select: none;
+}
+
+.product-card .card-image{
+  /* height: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.product-card .card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  padding: 1rem 1rem 0rem;
+}
+
+.card-content{
+  height: 100%;
+  padding: 0.85rem 1.5rem;
+}
+
+.card-content h3{
+  color: #a5a7aa;
+  font-weight: 700;
+}
+
+.card-content h4 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.card-content p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+}
 
 
 
@@ -681,6 +802,10 @@ a {
 
   }
 
+  /* Recommended Products */
+  .product-slider{
+    grid-auto-columns: calc((100% / 3) - 9px) ;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -699,6 +824,10 @@ a {
 
   .service-title {
     margin-bottom: 2rem;
+  }
+
+  .product-slider{
+    grid-auto-columns: calc((100% / 2) - 6px) ;
   }
 
 
@@ -732,6 +861,10 @@ a {
 
   .detailedProduct{
     padding: 2rem;
+  }
+
+  .product-slider{
+    grid-auto-columns: 100%;
   }
 
 
