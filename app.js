@@ -16,15 +16,13 @@ function closeMenu() {
   sideMenu.style.left = "-300px";
 }
 
+// For Category Menu
 function openCategoryMenu() {
   sideCategoryMenu.style.right = "0";
-
 }
 
 function closeCategoryMenu() {
   sideCategoryMenu.style.right = "-300px";
-
-
 }
 
 // For product page to display each category

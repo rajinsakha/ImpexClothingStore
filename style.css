@@ -760,6 +760,83 @@ a {
   font-weight: 500;
 }
 
+/* About US Page */
+.about-us{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+}
+
+.about-us-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+ 
+}
+
+.about-us-title h1{
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.our-vision, .our-approach, .our-process{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-bottom: 3rem;
+ 
+}
+
+.our-vision-desc, .our-approach-desc, .our-process-desc{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-vision-desc, .our-process-desc{
+  margin-right: 8rem;
+}
+
+.our-vision-desc h2, .our-approach-desc h2, .our-process-desc h2{
+  font-size: 42px;
+  line-height: 54px;
+  padding-bottom: 1rem;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.our-vision-desc p, .our-approach-desc p, .our-process-desc p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.our-approach-desc{
+  margin-left: 8rem;
+}
+
+.our-vision-image, .our-approach-image, .our-process-image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-vision-image img, .our-approach-image img, .our-process-image img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
 /* Responsive */
 @media screen and (max-width: 1050px) {
   /* Navbar Section */
@@ -877,9 +954,36 @@ a {
   .product-slider {
     grid-auto-columns: calc((100% / 3) - 9px);
   }
+
+  /* About */
+  .our-vision,  .our-process{
+    flex-direction: column;
+  }
+
+  .our-approach{
+    flex-direction: column-reverse;
+  }
+
+  .our-vision-desc, .our-process-desc{
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .our-approach-desc{
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+
 }
 
 @media screen and (max-width: 750px) {
+  
+
+  .navbar{
+    padding-right: 3rem;
+  }
+
   .section-padding {
     padding: 4rem;
   }
@@ -904,9 +1008,22 @@ a {
   .detailedProduct{
     padding: 4rem;
   }
+
+  .about-us{
+    padding: 2rem 4rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .navbar{
+    padding-right: 2rem;
+  }
+
+  .navbar-account p {
+    margin: 0 0.5rem;
+  }
+
+
   .section-padding {
     padding: 4rem 2rem;
   }
@@ -951,6 +1068,7 @@ a {
     font-size: 14px;
     line-height: 22px;
   }
+
 
   
 }
