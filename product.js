@@ -1,6 +1,8 @@
 // JavaScript code for the product page
 const addToCartButton = document.querySelector('.addCart-btn');
 let index = 0;
+let data=[];
+
 
 addToCartButton.addEventListener('click', () => {
 
@@ -8,23 +10,23 @@ addToCartButton.addEventListener('click', () => {
   const productName = productContainer.querySelector('.product-name').textContent;
   const productPrice = productContainer.querySelector('.product-price').textContent;
   const productImage = document.querySelector('#product-image').src;
-  index++;
+
 
 
   const imagePath = productImage.substring(productImage.lastIndexOf('/'));
   
-
   const productData = {
     index: index,
     name: productName,
     price: productPrice,
     image: imagePath
-
   };
 
-  for(let i = 0; i<index;i++){
-    localStorage.setItem(`cartProductData${i}`, JSON.stringify(productData));
-  }
+  // for(let i = 1; i<=index;i++){
+    data.push(productData);
+    localStorage.setItem(`cartProductData`, JSON.stringify(data));
+    index++;
+  // }
 
 
   // localStorage.setItem('cartProductData', JSON.stringify(productData));
