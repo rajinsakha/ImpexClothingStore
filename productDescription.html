@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShoeDescription</title>
+    <title>Shoe Description</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+  
   </head>
   <body>
     <!-- Navbar Section -->
@@ -31,8 +32,8 @@
 
       <!-- Account Section -->
       <div class="navbar-account">
-        <p><i class="fa-solid fa-user"></i></p>
-        <p><i class="fa-solid fa-cart-shopping"></i></p>
+        <p><a href="./account.html"><i class="fa-solid fa-user"></i></a></p>
+        <p><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
       </div>
 
       <!-- For responsive Navbar -->
@@ -67,6 +68,7 @@
             src="./assets/flight-grey.jpg"
             alt="jordan-main"
             class="main-image-link active-main-image"
+            id="product-image"
           />
           <img src="./assets/jordan-grey2.jpg" alt="" class="main-image-link" />
           <img
@@ -79,7 +81,7 @@
       </div>
 
       <div class="detailedProduct-desc">
-        <h2>Nike Air Jordan 4 Flight Edition</h2>
+        <h2 class="product-name">Nike Air Jordan 4 Flight Edition</h2>
         <div class="rating">
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
@@ -87,7 +89,8 @@
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star-half-stroke"></i>
         </div>
-        <h4>RS 7000.00</h4>
+        <h4 class="product-price">RS 7000.00</h4>
+      
         <div class="line"></div>
 
         <div class="detailedProduct-desc_info">
@@ -351,6 +354,9 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="product.js"></script>
+   
+   
     <script src="imageSlider.js" defer></script>
   </body>
 </html>

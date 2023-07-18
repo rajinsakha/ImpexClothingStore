@@ -31,8 +31,8 @@
 
       <!-- Account Section -->
       <div class="navbar-account">
-        <p><i class="fa-solid fa-user"></i></p>
-        <p><i class="fa-solid fa-cart-shopping"></i></p>
+        <p><a href="./account.html"><i class="fa-solid fa-user"></i></a></p>
+        <p><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
       </div>
 
       <!-- For responsive Navbar -->
@@ -58,12 +58,27 @@
           <h4 class="category-link">SHIRTS</h4>
           <h4 class="category-link">PANTS</h4>
           <h4 class="category-link">SHOES</h4>
+          
         </div>
       </div>
 
+<!-- For Responsive product Category -->
+<i class="fa-solid fa-filter" id="open-category" onclick="openCategoryMenu()"></i>
+
+        <div class="side-menu-category">
+          <h4 class="category-link active-link">ALL</h4>
+          <h4 class="category-link">SHIRTS</h4>
+          <h4 class="category-link">PANTS</h4>
+          <h4 class="category-link">SHOES</h4>
+          <i class="fa-solid fa-xmark" id="close-category" onclick="closeCategoryMenu()"></i>
+        </div>
+
+
+
       <div class="explore-category">
         <!-- All of our products are made with high-quality materials and are designed to be comfortable and durable. Shop now and find the perfect product for you! -->
-        <h2>EXPLORE PRODUCTS</h2>
+          <h2>EXPLORE PRODUCTS</h2>
+          
         <span
           >Stay stylish with the wide selection of products available at Impex
           Clothing Store.</span
@@ -94,21 +109,18 @@
           <div class="product-item">
             <img src="./assets/greyjeans.jpg" alt="" />
 
-            
             <div class="product-description">
-                <h3>PANTS</h3>
-                <h4>Grey Jeans Pant</h4>
-                <!-- Rating Star Icons -->
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <p>Rs 1800</p>
-
-             
+              <h3>PANTS</h3>
+              <h4>Grey Jeans Pant</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 1800</p>
             </div>
           </div>
 
@@ -418,26 +430,23 @@
           </div>
         </div>
 
-        
         <!-- Shoes Category -->
         <div class="explore-products" id="shoes">
           <div class="product-item">
             <img src="./assets/white-sport-shoe.jpg" alt="" />
 
             <div class="product-description">
-           
-                <h3>SHOES</h3>
-                <h4>White Sports Shoes</h4>
-                <!-- Rating Star Icons -->
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <p>Rs 5500</p>
-           
+              <h3>SHOES</h3>
+              <h4>White Sports Shoes</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 5500</p>
             </div>
           </div>
 
@@ -529,7 +538,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
+                <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
               </div>
               <p>Rs 7000</p>
             </div>

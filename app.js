@@ -3,6 +3,8 @@ const categoryLinks = [...document.getElementsByClassName("category-link")];
 const productList = [...document.getElementsByClassName("explore-products")];
 const imageList = [...document.getElementsByClassName("image-link")];
 const mainImages = [...document.getElementsByClassName("main-image-link")];
+const sideCategoryMenu = document.querySelector(".side-menu-category");
+
 
 
 // For Navigation Menu (Small Screen);
@@ -12,6 +14,17 @@ function openMenu() {
 
 function closeMenu() {
   sideMenu.style.left = "-300px";
+}
+
+function openCategoryMenu() {
+  sideCategoryMenu.style.right = "0";
+
+}
+
+function closeCategoryMenu() {
+  sideCategoryMenu.style.right = "-300px";
+
+
 }
 
 // For product page to display each category
@@ -53,5 +66,6 @@ imageList.forEach((image) => {
     });
   });
 });
+
 
 

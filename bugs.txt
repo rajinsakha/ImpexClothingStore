@@ -1,1 +1,6 @@
 Fix cart and account logo placement in Navbar in small and medium screen
+
+Notes
+If no item in cart, display "There are no items in the cart.
+
+When I Click the add to cart button, the item should be added to the cart!
