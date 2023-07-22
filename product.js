@@ -14,12 +14,15 @@ addToCartButton.addEventListener('click', () => {
 
 
   const imagePath = productImage.substring(productImage.lastIndexOf('/'));
+  const amount = productPrice.slice(2, productPrice.length );
+
   
   const productData = {
     index: index,
     name: productName,
     price: productPrice,
-    image: imagePath
+    image: imagePath,
+    amount: amount
   };
 
   // for(let i = 1; i<=index;i++){
